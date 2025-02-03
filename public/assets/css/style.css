@@ -1,0 +1,169 @@
+/* style.css */
+
+/* font Nunito */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../images/pattern.png) repeat center center/contain, #d9eff5;
+}
+
+
+main {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 50px 0;
+}
+
+#temp {
+    font-family: 'nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px !important;
+    line-height: 60px;
+    color: #FFAF5E;
+}
+
+#description {
+    font-family: 'nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px !important;
+    line-height: 12px;
+    color: #33333386;
+}
+
+
+header h1 {
+    font-family: nunito;
+    margin: 0 0 20px;
+    font-size: 2em;
+    color: #555;
+}
+
+#location-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;    
+}
+
+#location-input {
+    padding: 10px 15px;
+    font-size: 1em;
+    border: 1px solid #74A3FD;
+    border-radius: 99px;
+    width: 70%;
+    
+}
+
+#location-input:focus {
+    border-color: #007BFF;
+    outline: none;
+    
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #74A3FD;
+    border: none;
+    border-radius: 99px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#weather-result {
+    margin-top: 20px;
+    /* line-height: 1.8; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#weather-result h2 {
+    font-family: 'Nunito';
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#weather-result p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+h3 {
+    font-family: 'nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 10px;
+    color: #FFAF5E;
+}
+
+#icon {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+}
+
+#current-weather {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#current-weather-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+
+#future-weather {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px;
+}
+
+#future-weather div {
+    background: white;
+    border: 1px solid #74A3FD;
+    margin: 10px 10px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.051);
+    width: 100%;
+}
+
+#future-weather div img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+

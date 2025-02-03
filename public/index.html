@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+
+    <title>INM420 - Rest API</title>
+</head>
+<body>
+
+    <main>
+        <header>
+            <h1>What's the weather like in:</h1>
+        </header>
+        <section id="weather-container">
+            <form id="location-form">
+                <input type="text" id="location-input" placeholder="Enter city name" required>
+                <button type="submit">Go</button>
+            </form>
+            
+
+            <div id="weather-result" style="display: none;">
+                <!-- current weather -->
+                <h2>Current Weather</h2>
+                <div id="current-weather">
+                    <div id="current-weather-icon">
+                        <img id="icon" alt="Weather Icon">
+                    </div>
+                    <div id="current-weather-info">
+                        <p id="temp"></p>
+                        <p id="description"></p>
+                    </div>
+                </div>               
+                
+                <!-- future weather -->
+                <h2>Future Weather (Next 3 Days)</h2>
+                <div id="future-weather"></div>
+
+                <!-- air quality data -->
+                <h2>Air Quality</h2>
+                <p id="air-quality"></p>
+                <canvas id="air-quality-chart" style="max-width: 100%; height: 300px;"></canvas>
+                
+
+                <!-- time zone data -->
+                <h2>Time Zone</h2>
+                <p id="time-zone"></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
